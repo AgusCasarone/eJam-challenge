@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  @font-face {
+    font-family: 'Manrope', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+  };
+
+  body, h1, h2, h3, h4, h5, h6, p, span, a {
+    font-family: 'Manrope', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+  };
+
+  h1 {@aply text-3xl text-center}
+
+
+}
