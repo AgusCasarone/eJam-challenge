@@ -119,7 +119,7 @@
 
   clarifion-nav-bar { @apply sticky top-0 h-[42px] md:h-[50px] text-xs flex flex-row }
 
-  clarifion-header { @apply h-[70px] md:h-[96px] }
+  clarifion-header { @apply h-[70px] md:h-[96px] flex flex-row justify-evenly items-center}
 
   clarifion-footer { @apply bottom-0 h-[102px] md:h-[88px] text-xs md:text-base flex flex-col md:flex-row}
 
