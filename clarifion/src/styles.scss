@@ -140,7 +140,17 @@
   }
 
   clarifion-header {
-    @apply h-[70px] md:h-[96px] flex flex-row text-xs justify-evenly items-center;
+    @apply h-[70px] md:h-[96px] w-screen flex flex-row text-xs justify-between items-center;
+
+    .header-icons-container {
+      margin-left: 5vw;
+      width: 90vw;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      text-align: center;
+    }
   }
 
   clarifion-footer {
@@ -150,5 +160,18 @@
   clarifion-nav-bar,
   clarifion-footer {
     @apply bg-clarifion-dark-blue text-clarifion-white text-xs left-0 right-0 items-center justify-evenly text-center;
+  }
+
+  .logo-and-text-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    img {
+      padding-right: 8px;
+      height: fit-content;
+    }
   }
 }

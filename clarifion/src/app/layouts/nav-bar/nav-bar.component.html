@@ -3,7 +3,7 @@
     <img src="assets/icons/arrow-left.png" alt="arrow left">
   </button>
 
-  <div class="nav-button-container">
+  <div class="logo-and-text-container ">
     <img :src="{{navButtons[currentIndex].iconUrl}}" alt="{{ navButtons[currentIndex].title }}">
     <p>  {{ navButtons[currentIndex].title }} </p>
   </div>
@@ -18,7 +18,7 @@
 @else {
   @for (navButton of navButtons; track $index) {
 
-    <div class="nav-button-container">
+    <div class="logo-and-text-container w-[261px]">
       <img :src="{{navButton.iconUrl}}" alt="{{ navButton.title }}">
       <p>  {{ navButton.title }} </p>
     </div>

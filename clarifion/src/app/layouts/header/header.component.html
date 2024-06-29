@@ -1,12 +1,24 @@
-<div class="logo">
+<div class="clarifion-header">
   @if (isSmallScreen) {
-    <img src="assets/images/logo.png" alt="clarifion" width="92px" class="w-[106.67px]">
+    <div class="header-icons-container">
+      <img src="assets/images/logo.png" alt="clarifion" width="92px" class="w-[106.67px]">
+
+      <div class="security w-[101px] md:w-[202px] flex flex-row justify-evenly">
+        <img src="assets/images/McAfee-secure.png" alt="McAfee-secure" width="44px">
+        <img src="assets/images/Norton.png" alt="Norton" width="41px">
+      </div>
+    </div>
+
   }
   @else {
-    <img src="assets/images/logo.png" alt="clarifion" width="106.67px" class="md:w-[192px]">
+    <div class="header-icons-container">
+      <img src="assets/images/logo.png" alt="clarifion" width="106.67px" class="md:w-[192px]">
+
+      <div class="security w-[101px] md:w-[202px] flex flex-row justify-evenly">
+        <img src="assets/images/McAfee-secure.png" alt="McAfee-secure" width="88px">
+        <img src="assets/images/Norton.png" alt="Norton" width="82px">
+      </div>
+    </div>
   }
 </div>
-<div class="security w-[202px] flex flex-row justify-evenly">
-  <img src="assets/images/McAfee-secure.png" alt="McAfee-secure">
-  <img src="assets/images/Norton.png" alt="Norton">
-</div>
+
