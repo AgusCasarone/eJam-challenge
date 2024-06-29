@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-customer-review',
+  selector: 'customer-review',
   standalone: true,
   imports: [],
   templateUrl: './customer-review.component.html',
