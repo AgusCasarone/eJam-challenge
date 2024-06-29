@@ -21,22 +21,22 @@ export class NavBarComponent implements OnInit {
   navButtons: NavButton[] = [
     {
       title: '30-DAY SATISFACTION GUARANTEE',
-      iconUrl: 'guarantee.png',
+      iconUrl: 'assets/icons/guarantee.png',
       order: 1
     },
     {
       title: 'Free delivery on orders over $40.00',
-      iconUrl: 'delivery.png',
+      iconUrl: 'assets/icons/delivery.png',
       order: 2
     },
     {
       title: '50.000+ HAPPY CUSTOMERS',
-      iconUrl: 'heart.png',
+      iconUrl: 'assets/icons/heart.png',
       order: 3
     },
     {
       title: '100% Money Back Guarantee',
-      iconUrl: 'refound.png',
+      iconUrl: 'assets/icons/refound.png',
       order: 4
     }
   ]

@@ -100,31 +100,55 @@
 
 @layer base {
   @font-face {
-    font-family: 'Manrope', sans-serif;
+    font-family: "Manrope", sans-serif;
     font-style: normal;
     font-weight: 400;
     font-display: swap;
-    src: url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
-  };
+    src: url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap");
+  }
 
-  body {@apply text-clarifion-gray};
-  h1 {@apply text-2xl title-600 mb-1 text-clarifion-black};
-  h2 {@apply text-xl title-600 mb-1 text-clarifion-black};
-  h3 {@apply text-lg title-600 mb-1 text-clarifion-black};
-  h4 {@apply text-lg title-500 mb-1 text-clarifion-black};
-  h5 {@apply text-base title-500 mb-1 leading-4   };
-  h6, p, span {@apply text-400 text-sm mb-1};
+  body {
+    @apply text-clarifion-gray;
+  }
+  h1 {
+    @apply text-2xl title-600 mb-1 text-clarifion-black;
+  }
+  h2 {
+    @apply text-xl title-600 mb-1 text-clarifion-black;
+  }
+  h3 {
+    @apply text-lg title-600 mb-1 text-clarifion-black;
+  }
+  h4 {
+    @apply text-lg title-500 mb-1 text-clarifion-black;
+  }
+  h5 {
+    @apply text-base title-500 mb-1 leading-4;
+  }
+  h6,
+  p,
+  span {
+    @apply text-400 text-sm mb-1;
+  }
 
-  clarifion-main-layout { @apply min-h-screen }
+  clarifion-main-layout {
+    @apply min-h-screen;
+  }
 
-  clarifion-nav-bar { @apply sticky top-0 h-[42px] md:h-[50px] text-xs flex flex-row }
+  clarifion-nav-bar {
+    @apply sticky top-0 h-[42px] md:h-[50px] text-xs flex flex-row;
+  }
 
-  clarifion-header { @apply h-[70px] md:h-[96px] flex flex-row justify-evenly items-center}
+  clarifion-header {
+    @apply h-[70px] md:h-[96px] flex flex-row justify-evenly items-center;
+  }
 
-  clarifion-footer { @apply bottom-0 h-[102px] md:h-[88px] text-xs md:text-base flex flex-col md:flex-row}
+  clarifion-footer {
+    @apply bottom-0 h-[102px] md:h-[88px] text-xs md:text-base flex flex-col md:flex-row;
+  }
 
-  clarifion-nav-bar, clarifion-footer { @apply bg-clarifion-dark-blue text-clarifion-white left-0 right-0 items-center justify-evenly text-center }
-
+  clarifion-nav-bar,
+  clarifion-footer {
+    @apply bg-clarifion-dark-blue text-clarifion-white left-0 right-0 items-center justify-evenly text-center;
+  }
 }
-
-
