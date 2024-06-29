@@ -1,18 +1,27 @@
 @if (isSmallScreen) {
-  <button (click)="prevButton()"><</button>
+  <button (click)="prevButton()">
+    <img src="assets/icons/arrow-left.png" alt="arrow left">
+  </button>
 
-  <img :src="{{navButtons[currentIndex].iconUrl}}" alt="">
-  <p>  {{ navButtons[currentIndex].title }} </p>
+  <div class="nav-button-container">
+    <img :src="{{navButtons[currentIndex].iconUrl}}" alt="{{ navButtons[currentIndex].title }}">
+    <p>  {{ navButtons[currentIndex].title }} </p>
+  </div>
 
-  <button (click)="nextButton()">></button>
+
+  <button (click)="nextButton()">
+    <img src="assets/icons/arrow-right.png" alt="arrow right">
+  </button>
 
 }
 
 @else {
   @for (navButton of navButtons; track $index) {
 
-    <img :src="{{navButton.iconUrl}}" alt="">
-    <p>  {{ navButton.title }} </p>
+    <div class="nav-button-container">
+      <img :src="{{navButton.iconUrl}}" alt="{{ navButton.title }}">
+      <p>  {{ navButton.title }} </p>
+    </div>
 
   }
 }

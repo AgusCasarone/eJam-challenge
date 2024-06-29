@@ -140,7 +140,7 @@
   }
 
   clarifion-header {
-    @apply h-[70px] md:h-[96px] flex flex-row justify-evenly items-center;
+    @apply h-[70px] md:h-[96px] flex flex-row text-xs justify-evenly items-center;
   }
 
   clarifion-footer {
@@ -149,6 +149,6 @@
 
   clarifion-nav-bar,
   clarifion-footer {
-    @apply bg-clarifion-dark-blue text-clarifion-white left-0 right-0 items-center justify-evenly text-center;
+    @apply bg-clarifion-dark-blue text-clarifion-white text-xs left-0 right-0 items-center justify-evenly text-center;
   }
 }

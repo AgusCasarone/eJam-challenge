@@ -1,0 +1,12 @@
+.nav-button-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+  img {
+    padding-right: 8px;
+    height: fit-content;
+  }
+}
