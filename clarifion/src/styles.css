@@ -130,15 +130,15 @@
     @apply min-h-screen;
   }
   clarifion-nav-bar {
-    @apply sticky top-0 h-[42px] md:h-[50px] text-xs;
+    @apply sticky top-0 h-[42px] md:h-[50px] text-xs flex flex-row;
   }
   clarifion-header {
     @apply h-[70px] md:h-[96px];
   }
   clarifion-footer {
-    @apply bottom-0 h-[102px] md:h-[88px] text-xs md:text-base;
+    @apply bottom-0 h-[102px] md:h-[88px] text-xs md:text-base flex flex-col md:flex-row;
   }
   clarifion-nav-bar, clarifion-footer {
-    @apply bg-clarifion-dark-blue text-clarifion-white flex flex-row left-0 right-0 items-center justify-evenly text-center;
+    @apply bg-clarifion-dark-blue text-clarifion-white left-0 right-0 items-center justify-evenly text-center;
   }
 }/*# sourceMappingURL=styles.css.map */

@@ -1,6 +1,19 @@
-@for (navButton of navButtons; track $index) {
+@if (isSmallScreen) {
+  <button (click)="prevButton()"><</button>
 
-  <img :src="{{navButton.iconUrl}}" alt="{{ navButton.iconUrl }}">
-  <p>  {{ navButton.title }} </p>
+  <img :src="{{navButtons[currentIndex].iconUrl}}" alt="">
+  <p>  {{ navButtons[currentIndex].title }} </p>
+
+  <button (click)="nextButton()">></button>
 
 }
+
+@else {
+  @for (navButton of navButtons; track $index) {
+
+    <img :src="{{navButton.iconUrl}}" alt="">
+    <p>  {{ navButton.title }} </p>
+
+  }
+}
+

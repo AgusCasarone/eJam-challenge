@@ -12,4 +12,7 @@ import { RouterOutlet } from '@angular/router';
 })
 export class FooterComponent {
 
+  copyRight: string = 'Copyright (c) 2023 | Clarifionsupport@clarifion.com';
+  security: string = 'Secure 256-bit SSL encryption.';
+
 }
