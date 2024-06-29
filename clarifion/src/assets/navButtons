@@ -1,0 +1,24 @@
+import { NavButton } from '../app/interfaces/nav-button';
+
+export const navButtons: NavButton[] = [
+  {
+    title: '30-DAY SATISFACTION GUARANTEE',
+    iconUrl: './icons/guarantee.png',
+    order: 1
+  },
+  {
+    title: 'Free delivery on orders over $40.00',
+    iconUrl: './icons/delivery.png',
+    order: 2
+  },
+  {
+    title: '50.000+ HAPPY CUSTOMERS',
+    iconUrl: './icons/heart.png',
+    order: 3
+  },
+  {
+    title: '100% Money Back Guarantee',
+    iconUrl: './icons/refound.png',
+    order: 4
+  }
+]
