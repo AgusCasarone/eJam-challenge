@@ -198,6 +198,15 @@ $big-screen: 768px;
     }
   }
 
+  item-detail {
+    display: flex;
+    flex-direction: row;
+
+    @media (max-width: $big-screen) {
+      flex-direction: column;
+    }
+  }
+
   clarifion-footer {
     @apply bottom-0 h-[102px] md:h-[88px] text-xs md:text-base flex flex-col md:flex-row;
   }
