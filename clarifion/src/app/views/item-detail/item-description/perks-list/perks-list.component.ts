@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { ItemPerk } from '../../../../interfaces/item-perk';
+import { itemPerks } from '../../../../../../public/assets/itemPerks';
 
 @Component({
   selector: 'clarifion-perks-list',
@@ -8,5 +10,7 @@ import { Component } from '@angular/core';
   styleUrl: './perks-list.component.scss'
 })
 export class PerksListComponent {
+
+  itemPerks: ItemPerk[] = itemPerks;
 
 }

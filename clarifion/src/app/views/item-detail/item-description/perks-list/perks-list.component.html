@@ -1,1 +1,6 @@
-<p>perks-list works!</p>
+@for (perk of itemPerks; track $index) {
+  <div class="items-perk-list-container">
+    <img :src="{{perk.iconUrl}}" alt="{{ perk.description }}">
+    <p [innerHTML]="perk.description"></p>
+  </div>
+}

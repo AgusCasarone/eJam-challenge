@@ -3,17 +3,17 @@ import { ItemPerk } from '../../src/app/interfaces/item-perk';
 export const itemPerks: ItemPerk[] = [
   {
     iconUrl: 'assets/icons/tick-blue.png',
-    description: 'Negative Ion Technology may help with allergens',
+    description: 'Negative Ion Technology may help <span>with allergens</span>',
     order: 1
   },
   {
     iconUrl: 'assets/icons/tick-blue.png',
-    description: 'Designed for air rejuvenation',
+    description: 'Designed for <span>air rejuvenation</span>',
     order: 2
   },
   {
     iconUrl: 'assets/icons/tick-blue.png',
-    description: 'Perfect for every room in all types of places.',
+    description: '<span>Perfect for every room</span> in all types of places.',
     order: 3
   },
 

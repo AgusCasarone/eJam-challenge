@@ -5,13 +5,21 @@ import { ItemDescriptionComponent } from "./item-description/item-description.co
 import { ItemPayComponent } from "./item-pay/item-pay.component";
 import { isPlatformBrowser } from '@angular/common';
 import { CustomerReviewComponent } from "../customer-review/customer-review.component";
+import { SatisfactionGuaranteeComponent } from "../satisfaction-guarantee/satisfaction-guarantee.component";
 
 @Component({
     selector: 'item-detail',
     standalone: true,
     templateUrl: './item-detail.component.html',
     styleUrl: './item-detail.component.scss',
-    imports: [ItemTitleComponent, ItemMainPictureComponent, ItemDescriptionComponent, ItemPayComponent, CustomerReviewComponent]
+    imports: [
+      ItemTitleComponent,
+      ItemMainPictureComponent,
+      ItemDescriptionComponent,
+      ItemPayComponent,
+      CustomerReviewComponent,
+      SatisfactionGuaranteeComponent
+    ]
 })
 export class ItemDetailComponent implements OnInit{
 
