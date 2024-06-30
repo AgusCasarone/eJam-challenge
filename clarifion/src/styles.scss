@@ -252,6 +252,15 @@ $big-screen: 768px;
       span { @apply text-clarifion-light-blue }
   }
 
+  .claim-discount {
+    @apply bg-clarifion-dark-green rounded-[50px] w-[90vw] m-auto md:w-full self-center md:self-start
+      mt-[24px] md:my-[32px] h-[51px] md:h-[59px] text-clarifion-white justify-center items-center
+      text-[14px]/[19px] md:text-[20px]/[27px] flex flex-row;
+      p {
+        @apply  align-middle
+      }
+  }
+
   clarifion-footer {
     @apply bottom-0 h-[102px] md:h-[88px] text-xs md:text-base flex flex-col md:flex-row;
   }
