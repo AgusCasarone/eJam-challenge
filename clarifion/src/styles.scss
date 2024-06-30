@@ -254,10 +254,19 @@ $big-screen: 768px;
 
   .claim-discount {
     @apply bg-clarifion-dark-green rounded-[50px] w-[90vw] m-auto md:w-full self-center md:self-start
-      mt-[24px] md:my-[32px] h-[51px] md:h-[59px] text-clarifion-white justify-center items-center
+      mt-[24px] md:mt-[32px] h-[51px] md:h-[59px] text-clarifion-white justify-center items-center
       text-[14px]/[19px] md:text-[20px]/[27px] flex flex-row;
       p {
         @apply  align-middle
+      }
+  }
+
+  .payment-info {
+    @apply w-full rounded-[4px]  m-0 w-[90vw] m-auto md:w-full self-center md:self-start
+      border-[1px] border-[#CFCFCF] py-[8px] px-[16px] mt-[12px] flex flex-col md:flex-row
+      items-center justify-center ;
+      .payment-security {
+        @apply flex flex-row items-center justify-center
       }
   }
 

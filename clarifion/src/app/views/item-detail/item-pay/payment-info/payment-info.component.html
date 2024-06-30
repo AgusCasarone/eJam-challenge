@@ -1,1 +1,17 @@
-<p>payment-info works!</p>
+<div class="payment-info">
+  <div class="payment-security text-[12px]/[18px] text-clarifion-gray">
+    <p class="text-[12px]/[18px] text-clarifion-gray pr-[12px]
+    border-r-[1px] border-clarifion-gray">Free Shipping</p>
+    <div class="flex flex-row items-center justify-center ml-[12px] md:pr-[16px]">
+      <img src="assets/icons/lock-gray.png" alt="lock" class="w-[12px] h-[12px]">
+      <p class="text-[12px]/[18px] text-clarifion-gray">Secure 256-bit SSL encryption.</p>
+    </div>
+  </div>
+  <div class="pay-cards md:border-l-[1px] border-clarifion-gray pl-[12px]"
+  [class.border-t-[1px]]="isSmallScreen"
+  [class.w-full]="isSmallScreen"
+  [class.pt-[1px]]="isSmallScreen"
+  [class.mt-[1px]]="isSmallScreen">
+    <img src="assets/icons/payment-cards.png" alt="payment cards">
+  </div>
+</div>
