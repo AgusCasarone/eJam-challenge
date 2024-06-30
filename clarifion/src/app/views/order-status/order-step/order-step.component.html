@@ -1,0 +1,9 @@
+@for (step of statusList; track $index) {
+  <div class="order-step-container">
+    <img :src="{{ step.iconUrl }}" alt="{{ step.titleMd }}">
+    <p
+    [class.font-bold]="step.isActive">
+      {{ isSmallScreen ? step.titleSm : step.titleMd }}
+    </p>
+  </div>
+}

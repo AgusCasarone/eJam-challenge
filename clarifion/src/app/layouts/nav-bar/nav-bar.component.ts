@@ -2,6 +2,7 @@ import { Component, HostListener, Inject, OnInit, PLATFORM_ID } from '@angular/c
 import { RouterOutlet } from '@angular/router';
 import { NavButton } from '../../interfaces/nav-button';
 import { isPlatformBrowser } from '@angular/common';
+import { navButtons } from '../../../../public/assets/navButtons';
 
 @Component({
   selector: 'clarifion-nav-bar',
@@ -18,28 +19,7 @@ export class NavBarComponent implements OnInit {
   currentIndex: number = 0;
   isSmallScreen: boolean = false;
 
-  navButtons: NavButton[] = [
-    {
-      title: '30-DAY SATISFACTION GUARANTEE',
-      iconUrl: 'assets/icons/guarantee.png',
-      order: 1
-    },
-    {
-      title: 'Free delivery on orders over $40.00',
-      iconUrl: 'assets/icons/delivery.png',
-      order: 2
-    },
-    {
-      title: '50.000+ HAPPY CUSTOMERS',
-      iconUrl: 'assets/icons/heart.png',
-      order: 3
-    },
-    {
-      title: '100% Money Back Guarantee',
-      iconUrl: 'assets/icons/refound.png',
-      order: 4
-    }
-  ]
+  navButtons: NavButton[] = navButtons;
 
   constructor(@Inject(PLATFORM_ID) private platformId: Object){}
 

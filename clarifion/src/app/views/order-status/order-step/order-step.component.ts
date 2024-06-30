@@ -1,15 +1,18 @@
-import { isPlatformBrowser } from '@angular/common';
 import { Component, HostListener, Inject, OnInit, PLATFORM_ID } from '@angular/core';
-import { OrderStepComponent } from "./order-step/order-step.component";
+import { isPlatformBrowser } from '@angular/common';
+import { OrderStatus } from '../../../interfaces/order-status';
+import { orderStatusList } from '../../../../../public/assets/orderStatusList';
 
 @Component({
-    selector: 'order-status',
-    standalone: true,
-    templateUrl: './order-status.component.html',
-    styleUrl: './order-status.component.scss',
-    imports: [OrderStepComponent]
+  selector: 'order-step',
+  standalone: true,
+  imports: [],
+  templateUrl: './order-step.component.html',
+  styleUrl: './order-step.component.scss'
 })
-export class OrderStatusComponent implements OnInit {
+export class OrderStepComponent implements OnInit {
+
+  statusList: OrderStatus[] = orderStatusList;
 
   isSmallScreen: boolean = false;
 
@@ -27,6 +30,4 @@ export class OrderStatusComponent implements OnInit {
       this.isSmallScreen = window.innerWidth < 768;
     }
   }
-
-
 }
