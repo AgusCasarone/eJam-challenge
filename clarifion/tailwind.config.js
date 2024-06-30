@@ -11,6 +11,7 @@ module.exports = {
         'clarifion-black': '#000000',
         'clarifion-white': '#FFFFFF',
         'clarifion-light-blue': '#2C7EF8',
+        'clarifion-light-blue-bg': '#EDF3FD',
         'clarifion-dark-green': '#59AE43',
         'clarifion-light-green': '#5BB59A',
         'clarifion-light-gray': '#FAFAFA',

@@ -239,6 +239,19 @@ $big-screen: 768px;
     }
   }
 
+  item-pay {
+    @apply w-full;
+  }
+
+  .clarifion-save-container {
+    @apply w-full rounded-[10px] bg-clarifion-light-blue-bg m-0 w-[90vw] m-auto md:w-full self-center md:self-start
+      text-[14px]/[19.6px] md:text-[16px]/[22.4px] py-[12px] px-[16px] md:py-[17px] md:pl-[16px] flex flex-row align-middle items-center;
+      img {
+        @apply w-[24px] h-[24px] md:w-[32px] md:h-[32px] mr-[16px]
+      }
+      span { @apply text-clarifion-light-blue }
+  }
+
   clarifion-footer {
     @apply bottom-0 h-[102px] md:h-[88px] text-xs md:text-base flex flex-col md:flex-row;
   }
