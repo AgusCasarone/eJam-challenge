@@ -4,13 +4,14 @@ import { ItemMainPictureComponent } from "./item-main-picture/item-main-picture.
 import { ItemDescriptionComponent } from "./item-description/item-description.component";
 import { ItemPayComponent } from "./item-pay/item-pay.component";
 import { isPlatformBrowser } from '@angular/common';
+import { CustomerReviewComponent } from "../customer-review/customer-review.component";
 
 @Component({
     selector: 'item-detail',
     standalone: true,
     templateUrl: './item-detail.component.html',
     styleUrl: './item-detail.component.scss',
-    imports: [ItemTitleComponent, ItemMainPictureComponent, ItemDescriptionComponent, ItemPayComponent]
+    imports: [ItemTitleComponent, ItemMainPictureComponent, ItemDescriptionComponent, ItemPayComponent, CustomerReviewComponent]
 })
 export class ItemDetailComponent implements OnInit{
 
