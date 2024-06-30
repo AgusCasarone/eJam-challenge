@@ -1,1 +1,20 @@
-<p>item-description works!</p>
+@if (isSmallScreen) {
+  <div class="">
+    <clarifion-thumbnail></clarifion-thumbnail>
+    <clarifion-main-info></clarifion-main-info>
+  </div>
+  <div class="">
+    <clarifion-detail></clarifion-detail>
+    <clarifion-perks-list></clarifion-perks-list>
+  </div>
+}
+@else {
+  <div class="">
+    <clarifion-thumbnail></clarifion-thumbnail>
+    <clarifion-main-info></clarifion-main-info>
+    <clarifion-detail></clarifion-detail>
+  </div>
+  <div class="">
+    <clarifion-perks-list></clarifion-perks-list>
+  </div>
+}
