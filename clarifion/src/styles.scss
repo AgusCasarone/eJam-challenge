@@ -196,7 +196,7 @@ $big-screen: 768px;
 
   item-detail {
     @apply md:w-[80vw] flex flex-col md:flex-row m-auto md:bg-clarifion-light-gray
-      rounded-[10px] md:p-[40px] items-start content-start gap-[40px] ;
+      rounded-[10px] md:p-[40px] items-center content-center gap-[40px] ;
   }
 
   item-title {
@@ -208,8 +208,17 @@ $big-screen: 768px;
     @apply w-[320px] md:w-[575px] h-auto m-auto md:content-start;
   }
 
+  clarifion-thumbnail {
+    @apply w-[80px] md:w-[134px] h-auto
+  }
+
+  clarifion-main-info {
+    @apply w-[320px] md:w-[575px] md:content-start text-[12px] md:text-base;
+    p { @apply text-[12px] md:text-base text-center md:text-start }
+  }
+
   item-description {
-    @apply w-[320px] md:w-[575px] md:content-start
+    @apply w-[320px] md:w-[575px] md:content-start text-[12px] md:text-base
   }
 
   clarifion-perks-list {
