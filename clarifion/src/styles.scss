@@ -116,10 +116,11 @@ $big-screen: 768px;
     @apply text-2xl title-400 mb-1 text-clarifion-black text-[32px] md:text-[48px] m-[12px];
   }
   h2 {
-    @apply text-xl title-400 mb-1 text-clarifion-gray text-[16px]/[24px] md:text-[24px] m-[12px];
+    @apply text-xl title-400 mb-1 text-clarifion-black text-[24px]/[33.6px] md:text-[32px]/[44.8px] m-[12px] text-center md:text-left;
+    span { @apply text-clarifion-light-blue text-[24px]/[33.6px] md:text-[32px]/[44.8px] text-center md:text-left}
   }
   h3 {
-    @apply text-lg title-400 mb-1 text-clarifion-black;
+    @apply text-lg title-400 mb-1 text-clarifion-gray text-[16px]/[24px] md:text-[24px] m-[12px];
   }
   h4 {
     @apply text-lg title-300 mb-1 text-clarifion-black;
@@ -156,7 +157,7 @@ $big-screen: 768px;
   }
 
   order-status {
-    @apply h-[261px] md:h-[216px] w-screen flex flex-col text-xs text-center items-center;
+    @apply h-[215px] md:h-[176px] w-screen flex flex-col text-xs text-center items-center;
 
     .order-step-container {
       width: 261px;
@@ -166,6 +167,7 @@ $big-screen: 768px;
       justify-content: center;
       text-align: center;
       font-size: 20px;
+      margin-top: 24px;
 
       img {
         margin-right: 20px;

@@ -1,1 +1,16 @@
-<p>item-detail works!</p>
+@if (isSmallScreen) {
+  <item-title></item-title>
+  <item-main-picture></item-main-picture>
+  <item-description></item-description>
+  <item-pay></item-pay>
+}
+@else {
+  <div class="w-2/4">
+    <item-main-picture></item-main-picture>
+  </div>
+  <div class="w-2/4">
+    <item-title></item-title>
+    <item-description></item-description>
+    <item-pay></item-pay>
+  </div>
+}
