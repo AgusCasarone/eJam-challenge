@@ -1,5 +1,5 @@
 @if (isSmallScreen) {
-  <div class="">
+  <div class="item-description-container">
     <clarifion-thumbnail></clarifion-thumbnail>
     <clarifion-main-info></clarifion-main-info>
   </div>
@@ -9,10 +9,12 @@
   </div>
 }
 @else {
-  <div class="">
+  <div class="item-description-container">
     <clarifion-thumbnail></clarifion-thumbnail>
-    <clarifion-main-info></clarifion-main-info>
-    <clarifion-detail></clarifion-detail>
+    <div class="flex flex-col">
+      <clarifion-main-info></clarifion-main-info>
+      <clarifion-detail></clarifion-detail>
+    </div>
   </div>
   <div class="">
     <clarifion-perks-list></clarifion-perks-list>
