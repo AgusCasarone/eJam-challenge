@@ -295,6 +295,13 @@ $big-screen: 768px;
     .image { @apply w-[48px] h-[48px] md:w-[88px] md:h-[88px] mr-[16px]}
   }
 
+  .customer-review {
+    @apply bg-clarifion-white rounded-[10px] h-[186px] mt-[24px] p-[24px];
+    .user-identity {
+      @apply mb-[18px] flex flex-row
+    }
+  }
+
   clarifion-footer {
     @apply bottom-0 h-[102px] md:h-[88px] text-xs md:text-base flex flex-col md:flex-row mt-[50px] md:mt-[60px];
   }
